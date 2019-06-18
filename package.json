@@ -1,0 +1,23 @@
+{
+  "name": "eunoia",
+  "version": "0.1.0",
+  "description": "A work by Filbert Shi",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sporego/eunoia.git"
+  },
+  "author": "Filbert Shi and Jay Choi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Sporego/eunoia/issues"
+  },
+  "homepage": "https://github.com/Sporego/eunoia#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
