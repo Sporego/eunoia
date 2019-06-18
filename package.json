@@ -5,7 +5,8 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "postinstall": "cd client && npm i"
   },
   "repository": {
     "type": "git",
@@ -19,6 +20,7 @@
   "homepage": "https://github.com/Sporego/eunoia#readme",
   "dependencies": {
     "express": "^4.17.1",
+    "if-env": "^1.0.4",
     "mongoose": "^5.6.0"
   },
   "devDependencies": {
