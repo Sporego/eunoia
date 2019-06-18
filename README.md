@@ -19,7 +19,7 @@ Project Eunoia will be programmed in two main sprints. Sprint one will focus on 
 ### Mon June 17 2019
 
 - [x] Project Layout
-- [ ] React-router
-- [ ] Express
+- [x] Express
+- [x] React
 - [ ] User-Login
 - [ ] Store password in hash table!
