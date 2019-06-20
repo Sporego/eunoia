@@ -18,9 +18,7 @@ app.get("/express_backend", (req, res) => {
 //Database Block
 mongoose.connect("mongodb://localhost/test", { useNewUrlParser: true }); //Connect to test
 const db = mongoose.connection;
-db.on("error", console.error.bind(console, "connection error:"));
-db.once("open", function() {
-  // we're connected!
-});
+db.on("error", () => console.log("Database Connection: Error"));
+db.once("open", () => console.log("Database Connection: Success"));
 
 app.listen(port, () => console.log(`Listening on port ${port}`));
