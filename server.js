@@ -16,7 +16,11 @@ app.get("/express_backend", (req, res) => {
 });
 
 //Database Block
-mongoose.connect("mongodb://localhost/test", { useNewUrlParser: true }); //Connect to test
+mongoose
+  .connect("mongodb://localhost/test", { useNewUrlParser: true }) //Connect to test
+  .then(() => console.log("MongoDB Connected..."))
+  .catch(err => console.log(err));
+
 const db = mongoose.connection;
 db.on("error", () => console.log("Database Connection: Error"));
 db.once("open", () => console.log("Database Connection: Success"));
