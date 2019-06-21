@@ -37,4 +37,4 @@ function validateRegistrationInput(data) {
   };
 }
 
-export default validateRegistrationInput;
+module.exports = validateRegistrationInput;

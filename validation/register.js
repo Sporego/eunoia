@@ -22,4 +22,4 @@ function validateLoginInput(data) {
   };
 }
 
-export default validateLoginInput;
+module.exports = validateLoginInput;
