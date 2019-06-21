@@ -2,7 +2,7 @@ const validator = require("validator");
 const isEmpty = require("is-empty");
 
 function validateRegistrationInput(data) {
-  let errors = {};
+  const errors = {};
   // Convert empty fields to "" for validator function
   data.name = !isEmpty(data.name) ? data.name : "";
   data.email = !isEmpty(data.email) ? data.email : "";
