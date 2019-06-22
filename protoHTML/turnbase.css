@@ -1,0 +1,12 @@
+body {
+    background-image: url(darkrpgback.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    top: 20px;
+    font-size: 28px;
+    font-family: monospace;
+    color: white;
+}

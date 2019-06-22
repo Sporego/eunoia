@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" media="screen" href="rpg.css" />
+  <title>RPG</title>
+</head>
+<body>
+
+  <header id="adventchild">
+    <img src="advent.png" alt="boy" style="max-width:100%;height:auto;">
+    <h1>BOSS CHASER</h1>
+  </header>
+<form id="start-screen">
+  <input id="name-input" placeholder="What is your name?" />
+  <button id="start">Begin</button>
+</form>
+<div id="screen">
+  <div id="hero-stat">
+    <span id="hero-name"></span>
+    <span id="hero-level"></span>
+    <span id="hero-hp"></span>
+    <span id="hero-xp"></span>
+    <span id="hero-att"></span>
+  </div>
+  <form id="game-menu" style="display: none;">
+    <div id="menu-1">1.Journey</div>
+    <div id="menu-2">2.Rest</div>
+    <div id="menu-3">3.Quit</div>
+    <input id="menu-input" />
+    <button id="menu-button">Submit</button>
+  </form>
+  <form id="battle-menu" style="display: none;">
+    <div id="battle-1">1.Attack</div>
+    <div id="battle-2">2.Recover</div>
+    <div id="battle-3">3.Run Away</div>
+    <input id="battle-input" />
+    <button id="battle-button">Submit</button>
+  </form>
+  <div id="message"></div>
+  <div id="monster-stat">
+    <span id="monster-name"></span>
+    <span id="monster-hp"></span>
+    <span id="monster-att"></span>  
+  </div>
+</div>
+<script src="./turn.js"></script>
+</body>
+</html>
