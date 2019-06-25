@@ -14,7 +14,7 @@ const PokemonSchema = new Schema({
     type: Number,
     required: true
   },
-  hitpoints: {
+  hp: {
     type: Number,
     required: true
   }

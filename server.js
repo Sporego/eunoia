@@ -3,7 +3,9 @@ const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const passport = require("passport");
 
+//load api routes
 const users = require("./routes/api/users");
+const pokemons = require("./routes/api/pokemons");
 
 const port = process.env.PORT || 5000;
 
@@ -15,6 +17,7 @@ app.use(bodyParser.json()); //https://www.npmjs.com/package/body-parser#bodypars
 app.use(passport.initialize()); //Passport Middleware Intial
 require("./config/passport")(passport);
 app.use("/api/users", users); // route
+app.use("/api/pokemon", pokemons); //route
 
 // create a GET route
 app.get("/express_backend", (req, res) => {
