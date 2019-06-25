@@ -18,7 +18,7 @@ app.use("/api/users", users); // route
 
 // create a GET route
 app.get("/express_backend", (req, res) => {
-  res.send({ express: "YOUR EXPRESS BACKEND IS CONNECTED TO REACT" });
+  res.send({ express: "Backend Connection Status: 'Good'" });
 });
 
 //Database Block
