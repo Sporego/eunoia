@@ -26,7 +26,7 @@ router.post("/addpokemon", (req, res) => {
       //SAVE
       newPokemon
         .save()
-        .then(user => res.json(pokemon))
+        .then(pokemon => res.json(pokemon))
         .catch(err => console.log(err));
     }
   });
