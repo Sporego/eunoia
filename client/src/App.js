@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Root from "./components/root";
+import Play from "./components/play";
 
 class App extends Component {
   state = {
@@ -31,6 +32,7 @@ class App extends Component {
         <div className="App">
           <Switch>
             <Route path="/" exact component={Root} />
+            <Route path="/play" exact component={Play} />
           </Switch>
         </div>
       </Router>
