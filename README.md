@@ -16,10 +16,8 @@ Project Eunoia will be programmed in two main sprints. Sprint one will focus on 
 - [ ] (Route) to play game
 - [ ] (Route) to show game statistics
 
-### Mon June 17 2019
+Sprint two will focus on the "play module", which includes
 
-- [x] Project Layout
-- [x] Express
-- [x] React
-- [ ] User-Login
-- [ ] Store password in hash table!
+- [ ] Adventure/Move around map
+- [ ] Catch Pokemon
+- [ ] Battle Scenario
