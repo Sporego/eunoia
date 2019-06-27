@@ -3,9 +3,11 @@ import "./style.css";
 
 function Root() {
   return (
-    <div style={{ height: 800 }}>
+    <div>
       <header>
-        <img src="./img/textlogo.PNG" alt="logo" class="center" />
+        <img src="./img/textlogo.PNG" alt="logo" className="center" />
+        {/* client\public\img\textlogo.png */}
+        {/* Cannot be in SRC */}
       </header>
 
       <div class="center2">
