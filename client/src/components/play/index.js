@@ -31,8 +31,8 @@ const Player = props => (
   <div
     className="player"
     style={{
-      height: "100px",
-      width: "100px",
+      height: "90px",
+      width: "90px",
       position: "absolute",
       top: props.y,
       left: props.x,
@@ -45,8 +45,8 @@ class Play extends React.Component {
   // take a look at this for bounding rect
   // https://stackoverflow.com/questions/442404/retrieve-the-position-x-y-of-an-html-element
   state = {
-    x: 300,
-    y: 300
+    x: 270,
+    y: 270
   };
 
   handleKeyDown = event => {
@@ -54,25 +54,25 @@ class Play extends React.Component {
       case "ArrowRight":
         console.log("move right");
         this.setState((state, props) => ({
-          x: state.x + 50
+          x: state.x + 90
         }));
         break;
       case "ArrowLeft":
         console.log("move left");
         this.setState((state, props) => ({
-          x: state.x - 50
+          x: state.x - 90
         }));
         break;
       case "ArrowUp":
         console.log("move up");
         this.setState((state, props) => ({
-          y: state.y - 50
+          y: state.y - 90
         }));
         break;
       case "ArrowDown":
         console.log("move down");
         this.setState((state, props) => ({
-          y: state.y + 50
+          y: state.y + 90
         }));
         break;
       default:
@@ -93,8 +93,8 @@ class Play extends React.Component {
     return (
       <div>
         <Player x={this.state.x} y={this.state.y} />
-        <Bushes x={600} y={100} h="100px" w="500px" />
-        <Bushes x={200} y={200} h="100px" w="150px" />
+        <Bushes x={560} y={90} h="90px" w="560px" />
+        <Bushes x={270} y={180} h="90px" w="180px" />
       </div>
     );
   }
