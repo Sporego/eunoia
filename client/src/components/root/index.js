@@ -10,8 +10,8 @@ function Root() {
         {/* Cannot be in SRC */}
       </header>
 
-      <div class="center2">
-        <a class="push" href="home.html">
+      <div className="center2">
+        <a className="push" href="home.html">
           Get Started
         </a>
       </div>
