@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.css";
 
-function Root() {
+function Login() {
   return (
     <div>
       <div id="eunoia">
@@ -70,12 +70,8 @@ function Root() {
             >
               Forgot your password?
             </a>
-            <a
-              className="login-forget"
-              href="signup.html"
-              title="Password Lost and Found"
-            >
-              Sign Up
+            <a className="login-forget" href="/register" title="Register">
+              Register
             </a>
           </p>
         </form>
@@ -84,4 +80,4 @@ function Root() {
   );
 }
 
-export default Root;
+export default Login;

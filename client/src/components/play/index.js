@@ -47,8 +47,8 @@ class Play extends React.Component {
   // take a look at this for bounding rect
   // https://stackoverflow.com/questions/442404/retrieve-the-position-x-y-of-an-html-element
   state = {
-    x: 270,
-    y: 270
+    x: 1080,
+    y: 630
   };
 
   handleKeyDown = event => {
@@ -96,7 +96,7 @@ class Play extends React.Component {
       <div>
         <img src="./img/route1.JPG" />
         <Player x={this.state.x} y={this.state.y} />
-        <Bushes x={450} y={560} h="90" w="630" />
+        <Bushes x={450} y={540} h="90" w="630" />
         <Bushes x={270} y={90} h="180" w="990" />
       </div>
     );

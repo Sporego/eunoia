@@ -11,7 +11,7 @@ function Root() {
       </header>
 
       <div className="center2">
-        <a className="push" href="home.html">
+        <a className="push" href="/login">
           Get Started
         </a>
       </div>
