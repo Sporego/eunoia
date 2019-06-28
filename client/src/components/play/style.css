@@ -1,3 +1,7 @@
 .player {
   background-image: url(./img/006-charizard.gif);
 }
+
+*body {
+  background-image: url(../../maps/route1.JPG);
+}

@@ -4,6 +4,8 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Root from "./components/root";
 import Play from "./components/play";
 import Nav from "./components/nav";
+import Login from "./components/login";
+import Register from "./components/register";
 
 class App extends Component {
   state = {
@@ -35,6 +37,8 @@ class App extends Component {
           <Switch>
             <Route path="/" exact component={Root} />
             <Route path="/play" exact component={Play} />
+            <Route path="/login" exact component={Login} />
+            <Route path="/register" exact component={Register} />
           </Switch>
         </div>
       </Router>
