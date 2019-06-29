@@ -4,8 +4,8 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Root from "./components/root";
 import Play from "./components/play";
 import Nav from "./components/nav";
-import Login from "./components/login";
-import Register from "./components/register";
+import Login from "./components/auth/Login";
+import Register from "./components/auth/Register";
 
 class App extends Component {
   state = {
