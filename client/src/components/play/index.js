@@ -4,6 +4,10 @@ import backgroundImg from "./img/route1.JPG";
 
 const increment = 90; //define increment for grid
 
+function simulateClick(e) {
+  document.getElementById("myCheck").click();
+}
+
 const Bushes = props => (
   <div
     style={{
@@ -65,6 +69,10 @@ class Play extends React.Component {
           y: state.y + increment
         }));
         break;
+      case "Alt":
+        console.log("Alt");
+        simulateClick();
+        break;
       default:
         console.log("unhandled keypress", event.key);
     }
@@ -82,10 +90,69 @@ class Play extends React.Component {
     console.log(this.state.x);
     return (
       <div>
+        <div
+          className="modal fade"
+          id="exampleModalCenter"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="exampleModalCenterTitle"
+          aria-hidden="true"
+        >
+          <div className="modal-dialog modal-dialog-centered" role="document">
+            <div className="modal-content">
+              <div className="modal-header">
+                <h5 className="modal-title" id="exampleModalLongTitle">
+                  Modal title
+                </h5>
+                <button
+                  type="button"
+                  className="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div className="modal-body">...</div>
+              <div className="modal-footer">
+                <button
+                  type="button"
+                  className="btn btn-secondary"
+                  data-dismiss="modal"
+                >
+                  Close
+                </button>
+                <button type="button" className="btn btn-primary">
+                  Save changes
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
         <img src={backgroundImg} alt="" />
         <Player x={this.state.x} y={this.state.y} />
         <Bushes x={450} y={540} h="90" w="630" />
         <Bushes x={270} y={90} h="180" w="990" />
+        <button
+          id="myCheck"
+          ref={this.simulateClick}
+          x={90}
+          y={90}
+          type="button"
+          class="btn btn-secondary btn-sm invisible"
+          data-toggle="modal"
+          data-target="#exampleModalCenter"
+          style={{
+            height: "90px",
+            width: "90px",
+            position: "absolute",
+            top: 90,
+            left: 90,
+            zIndex: 0
+          }}
+        >
+          Small button
+        </button>
       </div>
     );
   }
