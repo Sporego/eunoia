@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import "./style.css";
 
+const axios = require("axios");
+
 class Register extends Component {
   constructor() {
     super();
@@ -24,7 +26,14 @@ class Register extends Component {
       password: this.state.password,
       password2: this.state.password2
     };
-    console.log(newUser);
+    axios
+      .post("/api/users/register", newUser)
+      .then(function(response) {
+        console.log(response);
+      })
+      .catch(function(error) {
+        console.log(error);
+      });
   };
   render() {
     const { errors } = this.state;

@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import "./style.css";
 
+const axios = require("axios");
+
 class Login extends Component {
   constructor() {
     super();
@@ -20,7 +22,14 @@ class Login extends Component {
       email: this.state.email,
       password: this.state.password
     };
-    console.log(userData);
+    axios
+      .post("/api/users/login", userData)
+      .then(function(response) {
+        console.log(response);
+      })
+      .catch(function(error) {
+        console.log(error);
+      });
   };
   render() {
     const { errors } = this.state;
