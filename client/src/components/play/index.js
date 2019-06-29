@@ -13,6 +13,7 @@
 
 import React from "react";
 import "./style.css";
+import backgroundImg from "./img/route1.JPG";
 
 const increment = 90; //define increment for grid
 
@@ -94,7 +95,10 @@ class Play extends React.Component {
     console.log(this.state.x);
     return (
       <div>
-        <img src="./img/route1.JPG" alt="" />
+        <button type="button" class="btn btn-primary btn-sm">
+          Small button
+        </button>
+        <img src={backgroundImg} alt="" />
         <Player x={this.state.x} y={this.state.y} />
         <Bushes x={450} y={540} h="90" w="630" />
         <Bushes x={270} y={90} h="180" w="990" />
