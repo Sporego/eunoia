@@ -4,6 +4,10 @@ import backgroundImg from "./img/route1.JPG";
 
 const increment = 90; //define increment for grid
 
+function simulateClick(e) {
+  document.getElementById("myCheck").click();
+}
+
 const Bushes = props => (
   <div
     style={{
@@ -65,14 +69,14 @@ class Play extends React.Component {
           y: state.y + increment
         }));
         break;
+      case "Alt":
+        console.log("Alt");
+        simulateClick();
+        break;
       default:
         console.log("unhandled keypress", event.key);
     }
   };
-
-  simulateClick(e) {
-    e.click();
-  }
 
   componentDidMount() {
     window.addEventListener("keydown", this.handleKeyDown);
@@ -130,6 +134,7 @@ class Play extends React.Component {
         <Bushes x={450} y={540} h="90" w="630" />
         <Bushes x={270} y={90} h="180" w="990" />
         <button
+          id="myCheck"
           ref={this.simulateClick}
           x={90}
           y={90}
