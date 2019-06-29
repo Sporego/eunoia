@@ -139,7 +139,7 @@ class Play extends React.Component {
           x={90}
           y={90}
           type="button"
-          class="btn btn-secondary btn-sm"
+          class="btn btn-secondary btn-sm invisible"
           data-toggle="modal"
           data-target="#exampleModalCenter"
           style={{
