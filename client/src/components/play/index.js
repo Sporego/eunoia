@@ -1,16 +1,3 @@
-// import React from "react";
-// import "./style.css";
-
-// function Root() {
-//   return (
-//     <div className="">
-//       <div className="" />
-//     </div>
-//   );
-// }
-
-// export default Root;
-
 import React from "react";
 import "./style.css";
 import backgroundImg from "./img/route1.JPG";
@@ -95,9 +82,6 @@ class Play extends React.Component {
     console.log(this.state.x);
     return (
       <div>
-        <button type="button" class="btn btn-primary btn-sm">
-          Small button
-        </button>
         <img src={backgroundImg} alt="" />
         <Player x={this.state.x} y={this.state.y} />
         <Bushes x={450} y={540} h="90" w="630" />

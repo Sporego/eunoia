@@ -1,5 +1,5 @@
 module.exports = {
   mongoURI:
-    "mongodb+srv://sporego:nYZJfwcnvak1i2iM@eunoia-nwqmh.mongodb.net/test?retryWrites=true&w=majority",
+    "mongodb://<dbuser>:<dbpassword>@ds247944.mlab.com:47944/heroku_xd3kq4w6",
   secretOrKey: "secret"
 };
