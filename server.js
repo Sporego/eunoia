@@ -13,7 +13,7 @@ const port = process.env.PORT || 5000;
 const app = express();
 
 // Serve the static files from the React app
-app.use(express.static(path.join(__dirname, "client/build")));
+app.use(express.static(path.join(__dirname, "./build")));
 
 //Middleware Block
 app.use(bodyParser.urlencoded({ extended: false })); // https://www.npmjs.com/package/body-parser#extended
