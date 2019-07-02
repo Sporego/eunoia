@@ -11,13 +11,15 @@ Also a rarely used medical term referring to a state of normal mental health.
 
 Project Eunoia will be programmed in two main sprints. Sprint one will focus on the "browser module", which includes
 
-- [ ] Login
-- [ ] Sign-Up
-- [ ] (Route) to play game
+- [x] Login
+- [x] Sign-Up
+- [x] (Route) to play game
 - [ ] (Route) to show game statistics
 
 Sprint two will focus on the "play module", which includes
 
-- [ ] Adventure/Move around map
+- [x] Adventure/Move around map
 - [ ] Catch Pokemon
 - [ ] Battle Scenario
+
+State management with modals
