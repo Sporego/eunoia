@@ -20,6 +20,6 @@ Sprint two will focus on the "play module", which includes
 
 - [x] Adventure/Move around map
 - [ ] Catch Pokemon
-- [ ] Battle Scenario
+- [x] Battle Scenario
 
 State management with modals
