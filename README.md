@@ -19,7 +19,7 @@ Project Eunoia will be programmed in two main sprints. Sprint one will focus on 
 Sprint two will focus on the "play module", which includes
 
 - [x] Adventure/Move around map
-- [ ] Catch Pokemon
+- [x] Catch Pokemon
 - [x] Battle Scenario
 
 State management with modals
