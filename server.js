@@ -15,6 +15,11 @@ const app = express();
 // Serve the static files from the React app
 app.use(express.static(path.join(__dirname, "/client/build")));
 
+//Server dynamic stuff
+app.get("*", (request, response) => {
+  response.sendFile(path.join(__dirname, "client/build", "index.html"));
+});
+
 //Middleware Block
 app.use(bodyParser.urlencoded({ extended: false })); // https://www.npmjs.com/package/body-parser#extended
 app.use(bodyParser.json()); //https://www.npmjs.com/package/body-parser#bodyparserjsonoptions
